@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.mini-view {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  background-color: crimson;
+  font-weight: bold;
+  font-size: 7em;
+  color: white;
+  text-shadow: 9px 5px firebrick;
+}
+
+.skill-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-table tr,
+.skill-table td,
+.skill-table th {
+  /* border: 1px solid black; */
+}
+
+.skill-table tr {
+  margin-bottom: 1em;
+}
+
+.skill-table th {
+  text-align: right;
+  padding: 0.5em;
+  font-size: 20px;
+  color: crimson;
+}
+
+.skill-table td {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 8em;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+}
