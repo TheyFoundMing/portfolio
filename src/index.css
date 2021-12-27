@@ -14,10 +14,11 @@ code {
 
 .mini-view {
   min-height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2em 0em;
 }
 
 #intro {
@@ -60,10 +61,52 @@ code {
 }
 
 footer {
-  margin-top: 8em;
+  margin-top: 5em;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: crimson;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.about-content {
+  display: flex;
+}
+
+.profile {
+  width: 50%;
+}
+
+.profile-description {
+  width: 30%;
+  text-align: left;
+  line-height: 1.25em;
+}
+
+.profile-img {
+  position: relative;
+  display: inline;
+}
+
+.profile-img img {
+  max-width: 20em;
+  height: auto;
+}
+
+.profile-img::before {
+  content: "";
+  z-index: -5;
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 20em;
+  height: 28em;
+  border: 3px dashed crimson;
 }

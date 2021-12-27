@@ -1,18 +1,48 @@
 import logo from "./logo.svg";
+import portfolioImg from "./img/portfolio.jpeg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <div id="intro" className="mini-view">
-        Hi, I'm Mika
+        Hi, I'm Mika !
       </div>
-      <div id="about" className="mini-view">
-        Aspiring front-end web developer. Computer Science student at Western
-        Michigan University and will graduate by Fall 2022. Based in Kalamazoo,
-        Michigan.
+      <div id="about" className="mini-view vertical ">
+        <h1>Aspiring front-end web developer</h1>
+        <p>
+          Computer Science student at Western Michigan University and will
+          graduate by Fall 2022. Based in Kalamazoo, Michigan.
+        </p>
+
+        <div className="about-content">
+          <div className="profile">
+            <div className="profile-img">
+              <img src={portfolioImg} alt="" />
+            </div>
+          </div>
+          <div className="profile-description">
+            <h2>Passionate</h2>
+            <p>
+              I enjoy working on web-development related technologies and always
+              strive to make beautiful websites. Found my love for programming
+              at a young age and will always continue to hone my skills.
+            </p>
+            <h2>Team-player, Independent worker</h2>
+            <p>
+              I'm often in an environment where I would collaborate with other
+              people, yet I am also capable of working by myself when necessary.
+            </p>
+            <h2>Task-Oriented</h2>
+            <p>
+              When given a task, I strive to do my best to provide quality
+              solutions in a timely manner.
+            </p>
+          </div>
+        </div>
       </div>
-      <div id="skills" className="mini-view">
+
+      {/* <div id="skills" className="mini-view">
         <div className="skill-table">
           <h2>My Current Skillset</h2>
           <table>
@@ -38,7 +68,7 @@ function App() {
             </tr>
           </table>
         </div>
-      </div>
+      </div> */}
       <div id="experience" className="mini-view vertical">
         <div>
           <h2>Software Engineering Intern @ Populix</h2>
