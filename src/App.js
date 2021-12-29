@@ -1,5 +1,10 @@
-import logo from "./logo.svg";
 import portfolioImg from "./img/portfolio.jpeg";
+import github from "./img/github.png";
+import linkedin from "./img/linkedin-logo.png";
+import resume from "./img/cv.png";
+
+import Card from "./components/Card";
+
 import "./App.css";
 
 function App() {
@@ -105,85 +110,111 @@ function App() {
       </div>
 
       <div id="projects" className="mini-view vertical">
-        <div>
-          <h2>Back2Back Fundraiser</h2>
-          <p>
-            Website dedicated for the Back2Back fundraiser supporting for the
-            Black Lives Matter movement and the Stop Asian American Pacific
-            Islander Hate.
-          </p>
-          <ul>
-            <li>
-              Called HTTP requests to the event’s REST API to fetch vendors
-              listed for the event
-            </li>
-            <li>
-              Client-app was implemented with React, Javascript and HTML/CSS.
-            </li>
-            <li> API was implemented with Node.js, Express and PostgreSQL.</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Data Center Management App</h2>
-          <p>
-            Keeps track of networks, server racks and the objects located inside
-            the racks themselves.
-          </p>
-          <ul>
-            <li>Implemented user and project authentication</li>
-            <li>
-              Implemented Create, Read, Update and Delete functions for server
-              racks, objects and networks
-            </li>
-            <li>
-              Client-app was implemented with React, Javascript and HTML/CSS
-            </li>
-            <li>Server API was implemented with Python, Django and MongoDB</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Parentheses Checker</h2>
-          <p>
-            Program written in Python which checks whether a string contains
-            balanced parentheses
-          </p>
-          <ul>
-            <li>
+        <div className="projects-container">
+          <Card demo="https://wmu-back2back.netlify.app/">
+            <h2>Back2Back Fundraiser</h2>
+            <p>
+              Website dedicated for the Back2Back fundraiser supporting for the
+              Black Lives Matter movement and the Stop Asian American Pacific
+              Islander Hate.
+            </p>
+
+            <div className="tags">
+              <div className="tag">React</div>
+              <div className="tag">Javascript</div>
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+              <div className="tag">Node.js</div>
+              <div className="tag">Express</div>
+              <div className="tag">PostgreSQL</div>
+            </div>
+          </Card>
+          <Card>
+            <h2>Data Center Management App</h2>
+            <p>
+              Keeps track of networks, server racks and the objects located
+              inside the racks themselves. Features both user authentication and
+              CRUD functionality
+            </p>
+
+            <div className="tags">
+              <div className="tag">React</div>
+              <div className="tag">Javascript</div>
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+              <div className="tag">Python</div>
+              <div className="tag">Django</div>
+              <div className="tag">MongoDB</div>
+            </div>
+          </Card>
+          <Card
+            github="https://github.com/TheyFoundMing/weather-app"
+            demo="https://theyfoundming.github.io/weather-app/"
+          >
+            <h2>5 Days - Weather App</h2>
+            <p>
+              Tells the general weather of any area given, powered by the
+              OpenWeather API.
+            </p>
+            <div className="tags">
+              <div className="tag">React</div>
+              <div className="tag">Javascript</div>
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+            </div>
+          </Card>
+          <Card
+            demo="https://theyfoundming.github.io/Tic-Tac-Toe/"
+            github="https://github.com/TheyFoundMing/Tic-Tac-Toe"
+          >
+            <h2>Tic-Tac-Toe</h2>
+            <p>
+              Simple tic-tac-toe game made in vanilla Javascript and HTML/CSS.
+            </p>
+            <div className="tags">
+              <div className="tag">Javascript</div>
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+            </div>
+          </Card>
+          <Card github="https://github.com/TheyFoundMing/parenthesis-checker">
+            <h2>Parentheses Checker</h2>
+            <p>
+              Program written in Python which checks whether a string contains
+              balanced parentheses.
+            </p>
+
+            <p>
               Stacks and Queues were implemented using Doubly Linked Lists to
-              keep track of the order of the parentheses in the string
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Huffman Tree Coding</h2>
-          <p>
-            Program written in Python which takes in a dictionary of characters
-            and their frequencies and return the corresponding Huffman codes
-          </p>
-          <ul>
-            <li>
-              Minheaps were implemented and used as a priority queue for the
-              Huffman Tree algorithm
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>5 Days - Weather App</h2>
-          <p>
-            Tells the general weather of any area given, powered by the
-            OpenWeather API and created with React, Javascript and HTML/CSS.
-          </p>
-        </div>
-        <div>
-          <h2>Rock, Paper, Scissors</h2>
-          <p>
-            Simple rock, paper, scissors game made in vanilla Javascript and
-            HTML/CSS.
-          </p>
+              keep track of the order of the parentheses in the string.
+            </p>
+
+            <div className="tags">
+              <div className="tag">Python</div>
+            </div>
+          </Card>
+          <Card github="https://github.com/TheyFoundMing/huffman-tree-coding">
+            <h2>Huffman Tree Coding</h2>
+            <p>
+              Program written in Python which takes in a set of characters and
+              their frequencies then return the corresponding Huffman codes.
+            </p>
+            <p>
+              Minheaps used as a priority queue for the Huffman Tree algorithm.
+            </p>
+            <div className="tags">
+              <div className="tag">Python</div>
+            </div>
+          </Card>
         </div>
       </div>
-      <footer>
+      <footer className="vertical">
         <a href="mailto:someone@yoursite.com">Let's work together</a>
+        <div>
+          <img src={github} alt="" />
+          <img src={linkedin} alt="" />
+          <img src={resume} alt="" />
+        </div>
       </footer>
     </div>
   );

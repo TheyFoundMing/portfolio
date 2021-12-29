@@ -12,13 +12,27 @@ code {
     monospace;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+.tag,
+footer {
+  font-family: monospace;
+}
+
+p,
+span {
+  font-family: sans-serif;
+}
+
 .mini-view {
   min-height: 100vh;
   /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 0em;
 }
 
 #intro {
@@ -58,6 +72,7 @@ code {
 
 .vertical {
   flex-direction: column;
+  padding: 2em 0em;
 }
 
 footer {
@@ -74,6 +89,12 @@ footer a {
   font-weight: bold;
   text-decoration: none;
   font-size: 2em;
+}
+
+footer div img {
+  width: 32px;
+  height: 32px;
+  margin: 0.25em;
 }
 
 .about-content {
@@ -109,4 +130,74 @@ footer a {
   width: 20em;
   height: 28em;
   border: 3px dashed crimson;
+}
+
+.card {
+  position: relative;
+  width: 18em;
+  height: 18em;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  padding: 1.5em;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.card:hover {
+  box-shadow: 3px 3px crimson;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.folder {
+  height: 35px;
+}
+
+.github {
+  background-image: url("./img/github-pink.png");
+  width: 32px;
+  height: 32px;
+  margin-bottom: -5px;
+}
+
+.demo {
+  background-image: url("./img/pink-demo.png");
+  width: 25px;
+  height: 25px;
+  margin-right: 0.25em;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.tags {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline;
+  color: white;
+  background-color: crimson;
+  padding: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  height: 1em;
+  margin-left: 0.2em;
+  margin-bottom: 0.25em;
 }
