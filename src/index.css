@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+#intro,
 h1,
 h2,
 h3,
@@ -23,7 +24,8 @@ footer {
 }
 
 p,
-span {
+span,
+ul {
   font-family: sans-serif;
 }
 
@@ -36,11 +38,9 @@ span {
 }
 
 #intro {
+  display: flex;
+  flex-direction: column;
   background-color: crimson;
-  font-weight: bold;
-  font-size: 7em;
-  color: white;
-  text-shadow: 9px 5px firebrick;
 }
 
 .skill-table {
@@ -141,6 +141,7 @@ footer div img {
   padding: 1.5em;
   text-align: left;
   line-height: 1.25;
+  transition: box-shadow 0.15s;
 }
 
 .card:hover {
@@ -200,4 +201,79 @@ footer div img {
   height: 1em;
   margin-left: 0.2em;
   margin-bottom: 0.25em;
+}
+
+#experience {
+  text-align: left;
+  padding: 0em 13em;
+}
+
+.position {
+  position: relative;
+}
+
+.position::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: crimson;
+  top: 43px;
+  left: 0px;
+  transition: width 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.position:hover::after {
+  width: 80%;
+}
+
+#intro img {
+  height: 4rem;
+  width: 6rem;
+  opacity: 0;
+}
+
+#intro h2 {
+  font-weight: bold;
+  font-size: 7em;
+  color: white;
+  text-shadow: 9px 5px firebrick;
+}
+
+@keyframes intro-start {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes intro-loop {
+  0% {
+    padding: 0em;
+  }
+  50% {
+    padding: 0.2em;
+  }
+  100% {
+    padding: 0em;
+  }
+}
+
+#intro img {
+  animation-name: intro-start;
+  animation-duration: 0.25s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+#intro h2 {
+  animation-name: intro-loop;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
 }

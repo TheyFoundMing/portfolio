@@ -1,4 +1,6 @@
 import portfolioImg from "./img/portfolio.jpeg";
+import arrow from "./img/down-thick.png";
+
 import github from "./img/github.png";
 import linkedin from "./img/linkedin-logo.png";
 import resume from "./img/cv.png";
@@ -11,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <div id="intro" className="mini-view">
-        Hi, I'm Mika !
+        <h2>Hi, I'm Mika!</h2>
+        <img src={arrow} alt="" />
       </div>
       <div id="about" className="mini-view vertical ">
         <h1>Aspiring front-end web developer</h1>
@@ -75,7 +78,7 @@ function App() {
         </div>
       </div> */}
       <div id="experience" className="mini-view vertical">
-        <div>
+        <div class="position">
           <h2>Software Engineering Intern @ Populix</h2>
           <span>February 2021 - May 2021</span>
           <p>
@@ -98,7 +101,7 @@ function App() {
           </ul>
         </div>
 
-        <div>
+        <div class="position">
           <h2>Grading Assistant @ Western Michigan University</h2>
           <span>January 2021 - May 2021</span>
           <p>
@@ -209,7 +212,9 @@ function App() {
         </div>
       </div>
       <footer className="vertical">
-        <a href="mailto:someone@yoursite.com">Let's work together</a>
+        <a href="mailto:michaellatjandra.magtibay@wmich.edu">
+          Let's work together
+        </a>
         <div>
           <img src={github} alt="" />
           <img src={linkedin} alt="" />
