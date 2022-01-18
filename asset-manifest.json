@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.01f08da2.css",
-    "main.js": "/portfolio/static/js/main.7f48e755.js",
-    "static/js/787.f9fe56db.chunk.js": "/portfolio/static/js/787.f9fe56db.chunk.js",
-    "static/media/me.png": "/portfolio/static/media/me.d218bc8707269e70a22a.png",
-    "static/media/portfolio.jpeg": "/portfolio/static/media/portfolio.a1fcd7361a83ee12db63.jpeg",
-    "static/media/github-pink.png": "/portfolio/static/media/github-pink.afd0392b6e46092051ba.png",
-    "static/media/pink-folder.png": "/portfolio/static/media/pink-folder.adda2b38d85c45b0d555.png",
-    "static/media/pink-demo.png": "/portfolio/static/media/pink-demo.8c3b1ffc3e9b67930529.png",
-    "index.html": "/portfolio/index.html",
-    "main.01f08da2.css.map": "/portfolio/static/css/main.01f08da2.css.map",
-    "main.7f48e755.js.map": "/portfolio/static/js/main.7f48e755.js.map",
-    "787.f9fe56db.chunk.js.map": "/portfolio/static/js/787.f9fe56db.chunk.js.map"
+    "main.css": "/portfolio-v2/static/css/main.8f2f8989.css",
+    "main.js": "/portfolio-v2/static/js/main.10425e8a.js",
+    "static/js/787.f9fe56db.chunk.js": "/portfolio-v2/static/js/787.f9fe56db.chunk.js",
+    "static/media/me.png": "/portfolio-v2/static/media/me.d218bc8707269e70a22a.png",
+    "static/media/portfolio.jpeg": "/portfolio-v2/static/media/portfolio.a1fcd7361a83ee12db63.jpeg",
+    "static/media/github-pink.png": "/portfolio-v2/static/media/github-pink.afd0392b6e46092051ba.png",
+    "static/media/pink-folder.png": "/portfolio-v2/static/media/pink-folder.adda2b38d85c45b0d555.png",
+    "static/media/pink-demo.png": "/portfolio-v2/static/media/pink-demo.8c3b1ffc3e9b67930529.png",
+    "index.html": "/portfolio-v2/index.html",
+    "main.8f2f8989.css.map": "/portfolio-v2/static/css/main.8f2f8989.css.map",
+    "main.10425e8a.js.map": "/portfolio-v2/static/js/main.10425e8a.js.map",
+    "787.f9fe56db.chunk.js.map": "/portfolio-v2/static/js/787.f9fe56db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01f08da2.css",
-    "static/js/main.7f48e755.js"
+    "static/css/main.8f2f8989.css",
+    "static/js/main.10425e8a.js"
   ]
 }
