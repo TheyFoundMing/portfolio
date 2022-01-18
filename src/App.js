@@ -1,4 +1,10 @@
+import ScrollTrigger from "react-scroll-trigger";
+import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
+
 import portfolioImg from "./img/portfolio.jpeg";
+import meImg from "./img/me.png";
+
 import arrow from "./img/down-thick.png";
 
 import github from "./img/github.png";
@@ -10,73 +16,72 @@ import Card from "./components/Card";
 import "./App.css";
 
 function App() {
+  const [Visited, setVisited] = useState(false);
+
+  const [firstAboutClass, setFirstAboutClass] = useState("not-visited");
+  const [secondAboutClass, setSecondAboutClass] = useState("not-visited");
+  const [thirdAboutClass, setThirdAboutClass] = useState("not-visited");
+
+  function onEnter() {
+    if (!Visited) {
+      setVisited(true);
+      setFirstAboutClass("not-visited visited");
+      setSecondAboutClass("not-visited visited");
+      setThirdAboutClass("not-visited visited");
+
+      console.log("visited!");
+    } else {
+      console.log("it has been visited");
+    }
+  }
+
   return (
     <div className="App">
-      <div id="intro" className="mini-view">
-        <h2>Hi, I'm Mika!</h2>
-        <img src={arrow} alt="" />
-      </div>
-      <div id="about" className="mini-view vertical ">
-        <h1>Aspiring front-end web developer</h1>
-        <p>
-          Computer Science student at Western Michigan University and will
-          graduate by Fall 2022. Based in Kalamazoo, Michigan.
-        </p>
+      <nav>
+        <HashLink smooth to="/#about" class="navlink">
+          About
+        </HashLink>
+        <HashLink smooth to="/#experience" className="navlink">
+          Experience
+        </HashLink>
+        <HashLink smooth to="/#projects" className="navlink">
+          Projects
+        </HashLink>
+        <HashLink smooth to="/#contact" className="navlink">
+          Contact Me
+        </HashLink>
+      </nav>
 
+      <HashLink smooth to="/#about">
+        <div id="intro" className="mini-view">
+          <h2>Hi, I'm Mika!</h2>
+          <img src={arrow} alt="" />
+        </div>
+      </HashLink>
+
+      <div id="about" className="mini-view vertical">
         <div className="about-content">
           <div className="profile">
-            <div className="profile-img">
-              <img src={portfolioImg} alt="" />
-            </div>
+            <img src={meImg} alt="" className="me" />
           </div>
           <div className="profile-description">
-            <h2>Passionate</h2>
+            <ScrollTrigger onEnter={onEnter} />
+            <h1>Michaella Magtibay</h1>
+
             <p>
-              I enjoy working on web-development related technologies and always
-              strive to make beautiful websites. Found my love for programming
-              at a young age and will always continue to hone my skills.
+              Full-stack engineer who creates{" "}
+              <i>simple, yet beautiful websites</i>. Every project worked on is{" "}
+              <i>made with love</i>.
             </p>
-            <h2>Team-player, Independent worker</h2>
+
             <p>
-              I'm often in an environment where I would collaborate with other
-              people, yet I am also capable of working by myself when necessary.
-            </p>
-            <h2>Task-Oriented</h2>
-            <p>
-              When given a task, I strive to do my best to provide quality
-              solutions in a timely manner.
+              Studying @ Western Michigan University studying Computer Science.
+              Graduating in Fall 2022.
             </p>
           </div>
         </div>
       </div>
 
-      {/* <div id="skills" className="mini-view">
-        <div className="skill-table">
-          <h2>My Current Skillset</h2>
-          <table>
-            <tr>
-              <th>Languages</th>
-              <td>Python, Javascript, Node.js, C,</td>
-            </tr>
-            <tr>
-              <th>Frameworks</th>
-              <td>React, Express, Bootstrap, Django, Flask</td>
-            </tr>
-            <tr>
-              <th>Databases</th>
-              <td>MongoDB, MySQL</td>
-            </tr>
-            <tr>
-              <th>Operating Systems</th>
-              <td>Windows, Linux</td>
-            </tr>
-            <tr>
-              <th>Others</th>
-              <td>HTML, CSS, Git </td>
-            </tr>
-          </table>
-        </div>
-      </div> */}
       <div id="experience" className="mini-view vertical">
         <div class="position">
           <h2>Software Engineering Intern @ Populix</h2>
@@ -99,6 +104,17 @@ function App() {
               Sequelize
             </li>
           </ul>
+
+          <div className="work tags">
+            <div className="tag">React</div>
+            <div className="tag">Javascript</div>
+            <div className="tag">HTML</div>
+            <div className="tag">CSS</div>
+            <div className="tag">Node.js</div>
+            <div className="tag">Express</div>
+            <div className="tag">Amazon S3</div>
+            <div className="tag">Docker</div>
+          </div>
         </div>
 
         <div class="position">
@@ -109,6 +125,11 @@ function App() {
             student assignments and tests, facilitated office hours for students
             taking Programming in C for Engineers and Cybersecurity
           </p>
+
+          <div className="work tags">
+            <div className="tag">C</div>
+            <div className="tag">Arduino</div>
+          </div>
         </div>
       </div>
 
@@ -130,6 +151,7 @@ function App() {
               <div className="tag">Node.js</div>
               <div className="tag">Express</div>
               <div className="tag">PostgreSQL</div>
+              <div className="tag">MaterialUI</div>
             </div>
           </Card>
           <Card>
@@ -211,7 +233,7 @@ function App() {
           </Card>
         </div>
       </div>
-      <footer className="vertical">
+      <footer id="contact" className="vertical">
         <a href="mailto:michaellatjandra.magtibay@wmich.edu">
           Let's work together
         </a>
