@@ -11,6 +11,8 @@ import github from "./img/github.png";
 import linkedin from "./img/linkedin-logo.png";
 import resume from "./img/cv.png";
 
+import resumeFile from "./files/Resume.pdf";
+
 import Card from "./components/Card";
 
 import "./App.css";
@@ -75,8 +77,8 @@ function App() {
             </p>
 
             <p>
-              Studying @ Western Michigan University studying Computer Science.
-              Graduating in Fall 2022.
+              Studying Computer Science @ Western Michigan University Graduating
+              in Fall 2022
             </p>
           </div>
         </div>
@@ -238,9 +240,15 @@ function App() {
           Let's work together
         </a>
         <div>
-          <img src={github} alt="" />
-          <img src={linkedin} alt="" />
-          <img src={resume} alt="" />
+          <a href="https://github.com/TheyFoundMing">
+            <img src={github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/michaella-magtibay-7851421b2/">
+            <img src={linkedin} alt="" />
+          </a>
+          <a href={resumeFile}>
+            <img src={resume} alt="" />
+          </a>
         </div>
       </footer>
     </div>
