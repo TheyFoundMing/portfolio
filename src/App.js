@@ -86,24 +86,42 @@ function App() {
 
       <div id="experience" className="mini-view vertical">
         <div class="position">
-          <h2>Software Engineering Intern @ Populix</h2>
-          <span>February 2021 - May 2021</span>
+          <h2>Bootcamp and Online Instructor @ iD Tech </h2>
+          <span>January 2022 - April 2022</span>
           <p>
-            Implemented filters to support the search bar for an existing
-            product database view, increasing optimization and user experience
-            by 25 percent
+            Delivered high-quality, individualized instruction for kids through
+            an online platform on a weekly basis
           </p>
+          <p>
+            Provided technical support, customer service and curriculum
+            assessment
+          </p>
+          <div className="work tags">
+            <div className="tag">React</div>
+            <div className="tag">Javascript</div>
+            <div className="tag">HTML</div>
+            <div className="tag">CSS</div>
+            <div className="tag">Python</div>
+            <div className="tag">Tensorflow</div>
+            <div className="tag">RPG Maker MZ</div>
+          </div>
+        </div>
 
+        <div class="position">
+          <h2>Front-end Developer @ Back2Back </h2>
+          <span>September 2021 - December 2021</span>
+          <p>
+            Delivered a website for a fundraiser held by Campus Activities Board
+            for the BLM and AAPI movement
+          </p>
           <ul>
             <li>
-              Created filters using MaterialUI library in React while calling
-              HTTP requests to fetch available brands options based on
-              categories that users have previously selected
+              Held weekly meetings to discuss with other team members on the
+              product’s software architecture and deployment
             </li>
             <li>
-              Created MySQL statements for the company’s REST API to return
-              selected products based on said filters using NodeJS, Express and
-              Sequelize
+              Debugged an issue that prevented the client app from being able to
+              communicate with the server API
             </li>
           </ul>
 
@@ -113,15 +131,14 @@ function App() {
             <div className="tag">HTML</div>
             <div className="tag">CSS</div>
             <div className="tag">Node.js</div>
-            <div className="tag">Express</div>
-            <div className="tag">Amazon S3</div>
-            <div className="tag">Docker</div>
+            <div className="tag">Heroku</div>
+            <div className="tag">Netlify</div>
           </div>
         </div>
 
         <div class="position">
           <h2>Grading Assistant @ Western Michigan University</h2>
-          <span>January 2021 - May 2021</span>
+          <span>January 2021 - April 2021</span>
           <p>
             Collaborated with professors in a fast-paced environment, graded
             student assignments and tests, facilitated office hours for students
@@ -137,12 +154,12 @@ function App() {
 
       <div id="projects" className="mini-view vertical">
         <div className="projects-container">
-          <Card demo="https://wmu-back2back.netlify.app/">
-            <h2>Back2Back Fundraiser</h2>
+          <Card github="https://github.com/JasonJohnsonWMU/InterventiveLearning">
+            <h2>Interventive Learning</h2>
             <p>
-              Website dedicated for the Back2Back fundraiser supporting for the
-              Black Lives Matter movement and the Stop Asian American Pacific
-              Islander Hate.
+              The Interventive Learning Web App delivers learning modules and
+              assessments to elementary students using predetermined learning
+              standards set by the Department of Education.
             </p>
 
             <div className="tags">
@@ -150,13 +167,13 @@ function App() {
               <div className="tag">Javascript</div>
               <div className="tag">HTML</div>
               <div className="tag">CSS</div>
-              <div className="tag">Node.js</div>
-              <div className="tag">Express</div>
-              <div className="tag">PostgreSQL</div>
-              <div className="tag">MaterialUI</div>
+              <div className="tag">Python</div>
+              <div className="tag">Django</div>
+              <div className="tag">MongoDB</div>
+              <div className="tag">Bootstrap</div>
             </div>
           </Card>
-          <Card>
+          <Card github="https://github.com/WebFrameworks-F21/semester-project-michaella-alex">
             <h2>Data Center Management App</h2>
             <p>
               Keeps track of networks, server racks and the objects located
@@ -243,7 +260,7 @@ function App() {
           <a href="https://github.com/TheyFoundMing">
             <img src={github} alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/michaella-magtibay-7851421b2/">
+          <a href="https://www.linkedin.com/in/micha-magtibay/">
             <img src={linkedin} alt="" />
           </a>
           <a href={resumeFile}>
