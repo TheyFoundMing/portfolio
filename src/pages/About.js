@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ScrollTrigger from "react-scroll-trigger";
 
-import meImg from "../img/me.png";
+import meImg from "../img/profile.jpg";
 
 function About () {
     const [Visited, setVisited] = useState(false);
@@ -26,23 +26,42 @@ function About () {
 
     return (      <div id="about" className="mini-view vertical">
     <div className="about-content">
-      <div className="profile">
+      {/* <div> */}
         <img src={meImg} alt="" className="me" />
-      </div>
+      {/* </div> */}
       <div className="profile-description">
         <ScrollTrigger onEnter={onEnter} />
         <h1>Michaella Magtibay</h1>
 
-        <p>
-          Full-stack engineer who creates{" "}
-          <i>simple, yet beautiful websites</i>. Every project worked on is{" "}
-          <i>made with love</i>.
-        </p>
+        <div className="profile-point">
+          <span className="emoji">&#128075;</span>
+          <p>
+          Hi, I’m Mika - I majored in Computer Science and graduated in Fall 2022 at 
+          Western Michigan University
+          </p>
+        </div>
 
-        <p>
-          Studying Computer Science @ Western Michigan University Graduating
-          in Fall 2022
-        </p>
+        <div className="profile-point">
+          <span className="emoji">&#128075;</span>
+          <p>
+          Currently working as a Customer Support Specialist at Streamline Healthcare Solutions 
+          </p>
+        </div>
+
+        <div className="profile-point">
+          <span className="emoji">&#128075;</span>
+          <p>
+          I am always dedicated to learning the latest technology, recently got certified in Amazon Web Services - Certified Developer
+          </p>
+        </div>
+
+        <div className="profile-point">
+          <span className="emoji">&#128075;</span>
+          <p>
+          I’m experienced in front-end development - I’ve worked on various projects using Javascript and Python. ReactJS is my front-end framework of choice. 
+          </p>
+        </div>
+
       </div>
     </div>
   </div>)

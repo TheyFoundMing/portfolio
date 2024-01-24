@@ -1,16 +1,44 @@
 
 function Experience () {
-    return (      <div id="experience" className="mini-view vertical">
+    return (      
+    <div id="experience" className="mini-view vertical">
+
+    <div class="position">
+      <h2>Customer Support Specialist @ Streamline Healthcare Solutions</h2>
+      <span>October 2022 - Present</span>
+      <p>
+        Acted as the bridge between customeres and development teams, conveying client feedback and feature enhancement
+      </p>
+      <ul>
+        <li>
+          Conducted thorough application testing on Electronic Healthcare Record systems to 
+          diagnose and resolve issues
+        </li>
+        <li>
+          Expertly escalated and routed support tickets, accelerating issue 
+          resolution and enhancing client satisfaction
+        </li>
+        <li>
+          Managed deployments for monthly service packs, hotfixes and custom software 
+          builds for customer environments
+        </li>
+      </ul>
+      <div className="work tags">
+        <div className="tag">Microsft Azure</div>
+        <div className="tag">Zendesk</div>
+      </div>
+    </div>
+
+
     <div class="position">
       <h2>Bootcamp and Online Instructor @ iD Tech </h2>
       <span>January 2022 - April 2022</span>
       <p>
-        Delivered high-quality, individualized instruction for kids through
-        an online platform on a weekly basis
+      Delivered 16 individualized instruction for a small group of 3-4 young adults to teach the basics of programming,
+game development and web development through Zoom and iDTech’s learning platform
       </p>
       <p>
-        Provided technical support, customer service and curriculum
-        assessment
+      Held office hours to reinforce learned concepts and assess students’ individual progress during the semester
       </p>
       <div className="work tags">
         <div className="tag">React</div>

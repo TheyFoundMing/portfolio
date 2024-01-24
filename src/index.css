@@ -107,6 +107,9 @@ footer div img {
 
 .about-content {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 65%;
 }
 
 .profile {
@@ -114,11 +117,21 @@ footer div img {
 }
 
 .profile-description {
-  width: 35%;
-  text-align: right;
   line-height: 1.25em;
   color: white;
-  margin: auto;
+  width: 70%;
+  text-wrap: wrap;
+  padding: 3em;
+}
+
+.profile-point {
+  display: flex;
+  align-items: center;
+  font-size: 1.15em;
+}
+
+.profile-point p {
+  padding: 0em 1em;
 }
 
 .not-visited {
@@ -220,13 +233,14 @@ u {
 #experience {
   text-align: justify;
   width: 50%;
-  margin: auto;
+  margin: 6em auto;
 }
 
 .position {
   position: relative;
   margin: 2em 0em;
   color: white;
+  min-inline-size: -webkit-fill-available;
 }
 
 .position span {
@@ -323,16 +337,6 @@ nav {
   z-index: 100;
 }
 
-/*   header: {
-    backgroundColor: "#ffffff00",
-    boxShadow: "none",
-    color: "black",
-    display: "flex",
-    alignItems: "flex-end",
-    paddingRight: "5em",
-    position: "fixed",
-    fontFamily: "monospace",
-  },*/
 
 #about {
   position: relative;
@@ -341,9 +345,9 @@ nav {
 }
 
 .me {
-  z-index: -2;
-  width: 70vw;
-  filter: drop-shadow(-20px 0px 0px #ff6584);
+  height: 20em;
+  width: 20em;
+  border-radius: 100%;
 }
 
 #about h1 {
