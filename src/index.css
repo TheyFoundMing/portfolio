@@ -17,6 +17,23 @@ code {
     monospace;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171c2d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6584;
+  border-radius: 10px;
+}
+
 #intro,
 h1,
 h2,
@@ -90,13 +107,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #241c2c;
-}
-
-footer a {
-  color: #ff6584;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 2em;
 }
 
 footer div img {
@@ -329,14 +339,15 @@ u {
 nav {
   position: fixed;
   top: 20px;
-  right: 0px;
   display: flex;
   align-items: flex-end;
   padding-right: 5em;
   font-family: monospace;
   z-index: 100;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0em 2em;
 }
-
 
 #about {
   position: relative;
@@ -357,4 +368,16 @@ nav {
 .projects-container a,
 .App a {
   text-decoration: none;
+}
+
+#contact a {
+  color: #ff6584;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #ff6584;
+  font-size: 2em;
+}
+
+.position li {
+  line-height: 1.5em;
 }

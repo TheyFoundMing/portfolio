@@ -36,27 +36,28 @@ function About () {
         <div className="profile-point">
           <span className="emoji">&#128075;</span>
           <p>
-          Hi, I’m Mika - I majored in Computer Science and graduated in Fall 2022 at 
-          Western Michigan University
+          Hi, I’m Mika - graduated with a <b>Computer Science </b>bachelors' in Fall 2022 at 
+          <b> Western Michigan University</b> with Magna Cum Laude
           </p>
         </div>
 
         <div className="profile-point">
-          <span className="emoji">&#128075;</span>
+          <span className="emoji">&#128187;</span>
           <p>
-          Currently working as a Customer Support Specialist at Streamline Healthcare Solutions 
+          Currently working as a <b>Customer Support Specialist</b> at <b>Streamline Healthcare Solutions</b>, 
+          troubleshooting and verifying customer-reported issues with the company's sophisticated Electronic Health Record system 
           </p>
         </div>
 
         <div className="profile-point">
-          <span className="emoji">&#128075;</span>
+          <span className="emoji">&#127891;</span>
           <p>
-          I am always dedicated to learning the latest technology, recently got certified in Amazon Web Services - Certified Developer
+          I am always dedicated to learning the latest technology, recently got certified in <b>Amazon Web Services - Certified Developer</b>
           </p>
         </div>
 
         <div className="profile-point">
-          <span className="emoji">&#128075;</span>
+          <span className="emoji">&#128295;</span>
           <p>
           I’m experienced in front-end development - I’ve worked on various projects using Javascript and Python. ReactJS is my front-end framework of choice. 
           </p>
