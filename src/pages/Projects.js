@@ -23,21 +23,21 @@ function Projects() {
           </div>
         </Card>
 
-        <Card>
-          <h2>Memory Allocation Simulator + Test Runner</h2>
-
+        <Card
+          github="https://github.com/TheyFoundMing/portfolio-v2"
+          demo="https://theyfoundming.github.io/portfolio-v2/"
+        >
+          <h2>My Portfolio</h2>
           <p>
-            Replicates dynamic memory allocation for programs upon request and
-            created a test runner from scratch to run tests provided for the
-            project
-          </p>
-          <p>
-            Due to file corruption with the code, I'm unable to upload it on
-            GitHub
+            My current portolio, to showcase my personal projects as well as the
+            experience I've gained throughout the years
           </p>
 
           <div className="tags">
-            <div className="tag">Python</div>
+            <div className="tag">React</div>
+            <div className="tag">Javascript</div>
+            <div className="tag">HTML</div>
+            <div className="tag">CSS</div>
           </div>
         </Card>
 
@@ -82,21 +82,21 @@ function Projects() {
           </div>
         </Card>
 
-        <Card
-          github="https://github.com/TheyFoundMing/portfolio-v2"
-          demo="https://theyfoundming.github.io/portfolio-v2/"
-        >
-          <h2>My Portfolio</h2>
+        <Card>
+          <h2>Memory Allocation Simulator + Test Runner</h2>
+
           <p>
-            My current portolio, to showcase my personal projects as well as the
-            experience I've gained throughout the years
+            Replicates dynamic memory allocation for programs upon request and
+            created a test runner from scratch to run tests provided for the
+            project
+          </p>
+          <p>
+            Due to file corruption with the code, I'm unable to upload it on
+            GitHub
           </p>
 
           <div className="tags">
-            <div className="tag">React</div>
-            <div className="tag">Javascript</div>
-            <div className="tag">HTML</div>
-            <div className="tag">CSS</div>
+            <div className="tag">Python</div>
           </div>
         </Card>
 
